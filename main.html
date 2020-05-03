@@ -1,0 +1,190 @@
+ <!DOCTYPE html>
+ <head>
+ 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+ 	<script src="jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="main.js"></script>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+
+<body background="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/11.jpg">
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="./front.html">Home</a>
+  <a href="./pictures.html">About us</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+</div>
+
+</script>
+<script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+</script>
+
+
+    <div id="contentContainer" class="trans3d"> 
+    <section id="carouselContainer" class="trans3d">
+        <figure id="item1" class="carouselItem trans3d"><div class="carouselItemInner trans3d">
+            <div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/1.jpg" class="image">
+                    <div class="overlay">
+                        <a href="./1.html" class="che" id="9">SUN</a>
+                      </div>
+        </div>
+        </div></figure>
+        <figure id="item2" class="carouselItem trans3d"><div class="carouselItemInner trans3d">
+            <div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/2.jpg" class="image">
+                    <div class="overlay">
+                        <a href="./2.html" class="che" id="9">MERCURY</a>
+                      </div>
+        </div>
+        </div></figure>
+        <figure id="item3" class="carouselItem trans3d"><div class="carouselItemInner trans3d">
+            <div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/3.jpg" class="image">
+                    <div class="overlay">
+                        <a href="./3.html" class="che" id="9">VENUS</a>
+                      </div>
+        </div>
+        </div></figure>
+        <figure id="item4" class="carouselItem trans3d"><div class="carouselItemInner trans3d">
+            <div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/4.jpg" class="image">
+                    <div class="overlay">
+                        <a href="./4.html" class="che" id="9">EARTH</a>
+                      </div>
+        </div>
+        </div></figure>
+        <figure id="item5" class="carouselItem trans3d"><div class="carouselItemInner trans3d">
+            <div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/5.jpg" class="image">
+                    <div class="overlay">
+                        <a href="./5.html" class="che" id="9">MARS</a>
+                      </div>
+        </div>
+        </div></figure>
+        <figure id="item6" class="carouselItem trans3d"><div class="carouselItemInner trans3d">
+            <div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/6.jpg" class="image">
+                    <div class="overlay">
+                        <a href="./6.html" class="che" id="9">JUPITER</a>
+                      </div>
+        </div>
+        </div></figure>
+        <figure id="item7" class="carouselItem trans3d"><div class="carouselItemInner trans3d">
+            <div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/7.jpg" class="image">
+                    <div class="overlay">
+                        <a href="./7.html" class="che" id="9">SATURN</a>
+                      </div>
+        </div>
+        </div></figure>
+        <figure id="item8" class="carouselItem trans3d"><div class="carouselItemInner trans3d">
+            <div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/8.jpg" class="image">
+                    <div class="overlay">
+                        <a href="./8.html" class="che" id="9">URANUS</a>
+                      </div>
+                </div>
+            </div>
+        </figure>
+        <figure id="item8" class="carouselItem trans3d"><div class="carouselItemInner trans3d">
+            <div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/9.jpg" class="image">
+                    <div class="overlay">
+                        <a href="./9.html" class="che" id="9">NEPTUNE</a>
+                      </div>
+                </div>
+            </div>
+        </figure>
+        <figure id="item8" class="carouselItem trans3d"><div class="carouselItemInner trans3d">
+            <div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/10.jpg" class="image">
+                    <div class="overlay">
+                        <a href="./10.html" class="che" id="9">PLUTO</a>
+                      </div>
+                </div>
+            </div>
+        </figure>
+        
+    </section>
+    </div>
+    <div>
+        <a href="./front.html" id="front"><img src=""></a>
+    </div>
+    </body>
+</html>

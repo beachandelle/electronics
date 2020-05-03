@@ -1,0 +1,123 @@
+body
+{ 
+    /*background-image: url("C:\Users\melissa\Pictures/bg.jpg");*/
+    background-repeat: no-repeat;
+    background-position: top center;
+    width:100%;
+    background-size:100% 65%;
+    height:100%;
+    min-height:1000px;
+    overflow:hidden;
+    font-family: 'quicksandlight', Helvetica, Arial;
+    /*color:#FFFFFF;*/
+    text-shadow: -1px -1px 4px rgba(0, 0, 0, .35);
+    filter: dropshadow(color=#000000, offx=1, offy=1);
+}
+
+
+h1 {
+	color: white;
+	font-size: 75px;
+	text-align: center;
+	padding-top: 20px;
+
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+body{
+   background-color: #000;
+}
+
+.blue-btn a{
+  color: white;
+  text-decoration:none;
+  text-align: center;
+  display:block; /* important */
+}
+
+.blue-btn h2{
+  font-size: 25px;
+  margin: auto;
+  width: 50%;
+  border: 3px white;
+  padding: 10px;
+}
+}
+
+.blue-btn, .first-link{
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;   
+  text-align: center;  
+}
+
+
+.blue-btn{
+  height: 64px;
+  font: normal normal 700 1em/4em Arial,sans-serif;
+  overflow: hidden;
+  /*width: 200px;*/
+  background-color: none;
+  border-color: white;
+  border: white;
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  top: 350px;
+  left: 25%;
+  width: 50%;
+}
+
+/*.blue-btn:hover{
+   background-color: #003D60;
+  
+}
+*/
+/*.blue-btn a:hover{
+  text-decoration: none;
+}*/
+
+.first-link{
+  margin-top: 0em; 
+  text-align: center;  
+}
+
+/*.blue-btn:hover .first-link{
+  margin-top: -4em;
+}*/
+
+
+.socialbuttons {
+  position: absolute;
+  bottom: 10px;
+  width: 50%;
+
+}
+@media (max-width: 1200px) {
+    .short-text { display: inline-block; }
+    .full-text { display: none; }
+}
+
+@media (max-width: 1200px) {
+  
+}

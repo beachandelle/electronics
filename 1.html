@@ -1,0 +1,154 @@
+ <!DOCTYPE html>
+ <head>
+ 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="planets.css">
+  <script src="main.js"></script>
+	<!-- <img src="https://media1.giphy.com/media/xTiIzPQZZUCFR0qowg/giphy.gif" alt="animated"/> -->
+  
+ </head>
+
+<body background="C:\Users\User\Pictures\tae/1.jpg">
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="./front.html">Home</a>
+  <a href="./main.html">Back</a>
+  <a href="./pictures.html">About us</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+</div>
+
+</script>
+<script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+</script>
+</head>
+<body>
+
+	<div id="contentContainer" class="trans3d"> 
+	<section id="carouselContainer" class="trans3d">
+		<figure id="item1" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><!-- <h1>The Sun accounts for 99.86% of the mass in the solar system.<img src="C:\Users\melissa\Pictures/7.jpg" class="image"></h1> -->
+		<div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/12.jpg" class="image">
+                    <div class="overlay">
+                        <h1>The Sun accounts for 99.86% of the mass in the solar system.</h1>
+                      </div>
+        </div></div></figure>
+		<figure id="item2" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><!-- <h1>It takes eight minutes for light reach Earth from the Sun.</h1> -->
+		<div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/12.jpg" class="image">
+                    <div class="overlay">
+                        <h1>It takes eight minutes for light reach Earth from the Sun.</h1>
+                      </div>
+        </div></div></figure>
+		<figure id="item3" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><!-- <h1>The Sun rotates in the opposite direction to Earth.</h1> -->
+		<div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/12.jpg" class="image">
+                    <div class="overlay">
+                        <h1>The Sun rotates in the opposite direction to Earth.</h1>
+                      </div>
+        </div></div></figure>
+		<figure id="item4" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/12.jpg" class="image">
+                    <div class="overlay">
+                        <h1>The Sun is classified as a yellow dwarf star.</h1>
+                      </div>
+        </div></div></figure>
+		<figure id="item5" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/12.jpg" class="image">
+                    <div class="overlay">
+                        <h1>This name originates from the ancient Roman’s god of the Sun, Sol.</h1>
+                      </div>
+        </div></div></figure>
+		<figure id="item6" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><div class="container">
+                <img src="C:\Users\User\Documents\Bea\School\Electronics\App\pictures/12.jpg" class="image">
+                    <div class="overlay">
+                        <h1>The Sun is travelling at 220 km per second.</h1>
+                      </div>
+        </div>
+        </div>
+		</figure>	
+	</section>
+	</div>
+</body>
+
+  
+  
+  

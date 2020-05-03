@@ -1,0 +1,349 @@
+/*html, body{ 
+  background-image: url("https://wallpaperaccess.com/full/148436.jpg");
+
+ } 
+*/
+body
+{ 
+    /*background-image: url("C:\Users\melissa\Pictures/bg.jpg");*/
+    background-repeat: no-repeat;
+    background-position: top center;
+    width:100%;
+    background-size:100% 63%;
+    height:100%;
+    min-height:1000px;
+    overflow:hidden;
+    font-family: 'quicksandlight', Helvetica, Arial;
+    /*color:#FFFFFF;*/
+    text-shadow: -1px -1px 4px rgba(0, 0, 0, .35);
+    filter: dropshadow(color=#000000, offx=1, offy=1);
+
+}
+
+header
+{
+    
+    margin-top:30px;
+    position:absolute;
+    z-index:5;
+    width:420px;
+    padding-top:10px;
+    padding-bottom:10px;
+
+}
+
+h1{
+    
+    font-size:36px;
+    letter-spacing:-2.5px;
+    margin-left:30px;
+}
+
+h3{
+    
+    font-size:16px;
+    letter-spacing:-1.5px;
+    margin-top:5px;
+    margin-left:35px;
+}
+
+#fps
+{
+    margin-top:5px;
+    margin-left:35px;
+}
+
+a
+{
+    color:rgba( 255, 255, 255, .65 );
+    text-decoration: none;
+}
+
+a:hover
+{
+    color:rgba( 255, 255, 255, 1 );
+}
+
+/* hardware accelatator class */    
+    .trans3d
+    {
+        -webkit-transform-style: preserve-3d;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform-style: preserve-3d;
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform-style:preserve-3d;
+        -ms-transform: translate3d(0, 0, 0);
+        transform-style:preserve-3d;
+        transform: translate3d(0, 0, 0);
+
+        /*-webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility:hidden;
+        backface-visibility:hidden;*/
+    }
+    
+    #contentContainer
+    {
+        position:absolute;
+        margin-left:-500px;
+        margin-top:-500px;
+        left:50%;
+        top:50%;
+        width:1000px;
+        height:1000px;
+    }
+    
+    #carouselContainer
+    {
+        position:absolute;
+        margin-left:-500px;
+        margin-top:-500px;
+        left:50%;
+        top:50%;
+        width:1000px;
+        height:1000px;
+    }
+    
+    .carouselItem
+    {
+        width:320px;
+        height:130px;
+        position:absolute;
+        left:50%;
+        top:50%;
+        margin-left:-160px;
+        margin-top:-90px;
+        visibility:hidden;
+    }
+    
+    .carouselItemInner
+    {
+        width:320px;
+        height:130px;
+        position:absolute;
+        background-color:rgba(255, 255, 255, .75);
+        border:10px solid rgba(255, 255, 255, .5);
+        color:aqua;
+        font-size:72px;
+        left:50%;
+        top:50%;
+        margin-left:-160px;
+        margin-top:-90px;
+        text-align:center;
+        padding-top:50px;
+        
+    }
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 320px;
+  height: 180px;
+  position: relative;
+  bottom: 50px;
+}
+
+.image:hover {
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+/*  background-color: #008CBA;*/
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  position: relative;
+  width: 320px;
+  top: 40px;
+  left: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+#alabyu {
+  color: #000;
+  font-size: 15px;
+  position: relative;
+  text-align: bottom;
+  
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #0000;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.che {
+  color: white;
+  font-size: 35px;
+  position: relative;
+  width: 320px;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+// Imports
+@import url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css');
+
+// Variables
+@colorBase: rgba(68, 138, 175, 1);
+
+// Mixins
+.transition (@prop: all, @time: 1s, @ease: linear) {
+  -webkit-transition: @prop @time @ease;
+  -moz-transition: @prop @time @ease;
+  -o-transition: @prop @time @ease;
+  -ms-transition: @prop @time @ease;
+  transition: @prop @time @ease;
+}
+.universal-inline-block {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+// Styles
+.social-icons {
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 1.5em;
+  color: @colorBase;
+  h1 {
+    margin: 40px 0;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      .universal-inline-block;
+      vertical-align:  middle;
+      a {
+        display: block;
+        font-size: 1.4em;
+        margin: 0 5px;
+        text-decoration: none;
+        i {
+          color: @colorBase;
+          .transition(all, 0.2s, ease-in);
+        }
+        &:hover {
+          i {
+            color: darken(@colorBase, 20%);
+          }
+        }
+        &:focus, &:active {
+          i {
+            transition: none;
+            color: darken(@colorBase, 40%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+    .short-text { display: inline-block; }
+    .full-text { display: none; }
+}
+
+@media (max-width: 1200px) {
+  
+}
+
